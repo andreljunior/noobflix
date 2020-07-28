@@ -13,21 +13,16 @@ function Home() {
         <BannerMain 
             videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
             url={dadosIniciais.categorias[0].videos[0].url}
-            videosDescription={"O que é Front-end? Tabalhando na área"}
+            videosDescription={dadosIniciais.categorias[0].videos[0].text}
         />    
 
         <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-        />
-
-        <Carousel
-            category={dadosIniciais.categorias[1]}
+        category={dadosIniciais.categorias[1]}
         />
 
         <Carousel
             category={dadosIniciais.categorias[2]}
-        />      
+        />
 
         <Carousel
             category={dadosIniciais.categorias[3]}
@@ -39,6 +34,10 @@ function Home() {
 
         <Carousel
             category={dadosIniciais.categorias[5]}
+        />      
+
+        <Carousel
+            category={dadosIniciais.categorias[6]}
         />      
 
         <Footer />
